@@ -1,0 +1,64 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.container::before{
+  padding: 0;
+  margin: 0;
+}
+/* Starting of Top*/
+/* .top-side{
+  padding: 10px 0px;
+}
+.top .top-text{
+  font-size: 15px;
+  color: #000;
+  padding: 0px 14px;
+}
+.top .top-text:first-child{
+  padding-left: 0px;
+}
+.top .top-img{
+  width: 98px;
+  padding-right: 5px;
+  transform: translateX(6px);
+} */
+
+/* Ending of Top*/
+
+
+/* Starting of Category*/
+.category .container{
+  padding: 0px;
+}
+.c1{
+  height: 160px;
+  border-radius: 20px;
+  margin-top: 15px;
+  background-color: #B4D682;
+  text-align: center;
+  box-shadow: 0px 4px 8px -6px #333;
+}
+.c1-img{
+  width: auto;
+  height: 70px;
+  margin: 25px 0px;
+}
+.c1-text{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: black;
+}
+.category a:hover{
+  text-decoration: none;
+}
+
+/* Ending of Category*/
+
+
+
+
+.asp .container{
+  background: red;
+  height: 10px;
+}
