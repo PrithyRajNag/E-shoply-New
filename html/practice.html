@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/practice.css">
+  <title>Practice</title>
+</head>
+<body>
+  <section class="top">
+      <div class="container">
+         <div class="row">
+             <div class="top-all col-12 offset-sm-3 col-sm-9 offset-md-4 col-md-8 offset-lg-5 col-lg-7 offset-xl-6 col-xl-6">
+                  <div class="top-side">
+                        <a class="top-text" href="#">Become a Seller</a>
+                        <a class="top-text" href="#">Support Center</a>
+                        <a class="top-text" href="#">Available Now</a>
+                        <a href="#"><img class="top-img" src="assets/pictures/app-store.png" alt="App Store"></a>
+                        <a href="#"><img class="top-img" src="assets/pictures/google-play.png" alt="Google Play"></a>
+                  </div>
+             </div>
+         </div>
+      </div>
+  </section>
+  <section class="upper-side">
+        <div class="container">
+            <div class="row">
+                  <a href="index.html"><img class="logo col-5 col-sm-4 col-md-3 col-lg-3 col-xl-3" src="assets/pictures/logo.svg" alt="Logo"></a>
+                  <div class="search input-group col-11 col-sm-11 col-md-12 col-lg-6  col-xl-6">
+                       <div class="all-dropdown float-right d-inline-block">
+                             <button class="btn all-dropdown-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             All <i class="fas fa-chevron-down all-down-icon"></i>
+                             </button>
+                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                               <a class="dropdown-item" href="#">Samsung Galaxy M30</a>
+                               <a class="dropdown-item" href="#">Redmi Note 9</a>
+                               <a class="dropdown-item" href="#">Realmi 6i</a>
+                             </div>
+                       </div>
+                       <input type="text" class="form-control " placeholder="Search for products">
+                       <button class="input-group-append btn  search-btn" type="button"><i class="fas fa-search search-icon"></i></button>
+                  </div>
+                  <div class="ncfs-btns col-lg-3 col-xl-3 d-flex">
+                       <div>
+                         <button class="ncfs-btn btn"><img class="notify" src="assets/pictures/notify.png" alt="Notification"></button>
+                       </div>
+                       <div>
+                         <button class="ncfs-btn btn cart-dropdown-btn" type="button" id="dropdownCartButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="cart" src="assets/pictures/cart.png" alt="Cart"></button>
+                         <div class="dropdown-menu cart-dropdown" aria-labelledby="dropdownCartButton">
+                           <div class="upper-part">
+                             <p>Cart</p>
+                           </div>
+                           <div class="body-part">
+                               <a class="dropdown-item" href="#">
+                                 <div class="product">
+                                   <input type="radio" name="store" value="Store-1">
+                                   <p class="store-name"> Samsung Official Store</p>
+                                   <i class="fas fa-angle-right"></i>
+                                   <div class="product-part">
+                                     <div class="img-text-part d-flex">
+                                       <img class="cart-product-img card-img-top" src="assets/pictures/galaxy-s20-1.jpg" alt="BRAND" >
+                                       <div class="text-part">
+                                         <p class="product-name">Samsung Galaxy s20 Ultra Smartphone 6.8" -8GB RAM-512GB</p>
+                                         <div class="color-value-part">
+                                           <p>Color: Black</p>
+                                           <form>
+                                             <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                             <input type="number" id="number" value="0" />
+                                             <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                           </form>
+                                         </div>
+                                         <p class="price">BDT 80,0000</p>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </a>
+                               <a class="dropdown-item" href="#">
+                                 <div class="product">
+                                   <input type="radio" name="store" value="Store-1">
+                                   <p class="store-name"> Samsung Official Store</p>
+                                   <i class="fas fa-angle-right"></i>
+                                   <div class="product-part">
+                                     <div class="img-text-part d-flex">
+                                       <img class="cart-product-img card-img-top" src="assets/pictures/galaxy-s20-1.jpg" alt="BRAND" >
+                                       <div class="text-part">
+                                         <p class="product-name">Samsung Galaxy s20 Ultra Smartphone 6.8" -8GB RAM-512GB</p>
+                                         <div class="color-value-part">
+                                           <p>Color: Black</p>
+                                           <form>
+                                             <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                             <input type="number" id="number" value="0" />
+                                             <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                           </form>
+                                         </div>
+                                         <p class="price">BDT 80,0000</p>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </div>
+                               </a>
+                           </div>
+                           <div class="down-part">
+                             <input type="radio" name="all" value="all">
+                             <label for="all">All</label>
+                             <button class="text-center btn" type="submit">Check out</button>
+                           </div>
+                         </div>
+                       </div>
+                       <div>
+                         <button class="ncfs-btn btn"><img class="fav" src="assets/pictures/favourite.png" alt="Favourite"></button>
+                       </div>
+                       <div>
+                         <button class="ncfs-btn btn"><img class="sign-in" src="assets/pictures/sign-in.png" alt="Sign In"></button>
+                       </div>
+                  </div>
+            </div>
+        </div>
+  </section>
+  <Section class="main-menu">
+    <div class="container">
+        <div class="row">
+           <div class="d-flex menu col-lg-12 col-xl-12">
+               <div class="navbar navbar-expand-lg navbar-light">
+                 <div id="btn" class="navbar-brand bar">
+                   <div id="top"></div>
+                   <div id="middle"></div>
+                   <div id="bottom"></div>
+                 </div>
+               </div>
+               <ul>
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="new-products.html">NEW PRODUCTS</a></li>
+                 <li><a href="#">CAMPAIGN</a></li>
+                 <li><a class="active" href="brand.html">BRAND</a></li>
+                 <li><a href="shop.html">SHOP</a></li>
+                 <li><a href="#">COMMUNITY</a></li>
+               </ul>
+           </div>
+        </div>
+    </div>
+  </Section>
+  <section id="sidebar" class="active" >
+       <div class="sidebar-up">
+           <a href="#" class="closebtn float-left "><i class="fas fa-arrow-left"></i></a>
+           <a href="index.html"><img class="sidebar-logo" src="assets/pictures/sidebar-logo.png " alt="Sidebar Logo"></a>
+           <a href="sign-reg.html" class="sign-in-btn">Sign In / Register</a>
+       </div>
+           <ul class="list-unstyled components">
+             <li>
+               <a href="index.html"><img class="sidebar-img" src="assets/pictures/home.png">Home</a>
+             </li>
+             <li class="responsive-items">
+               <a href="new-products.html"><i class="sidebar-img fab fa-product-hunt"></i>New Products</a>
+             </li>
+             <li>
+               <a href="#"><i class="sidebar-img fas fa-bullhorn"></i>Campaigns</a>
+             </li>
+             <li class="responsive-items">
+               <a href="brand.html"><i class="sidebar-img far fa-thumbs-up"></i>Brand</a>
+             </li>
+             <li class="responsive-items">
+               <a href="shop.html"><i class="sidebar-img fas fa-store"></i>Shop</a>
+             </li>
+             <li class="responsive-items">
+               <a href="#"><i class="sidebar-img fas fa-users"></i>Community</a>
+             </li>
+             <li>
+               <a href="#"><img class="sidebar-img" src="assets/pictures/cart.png">Cart</a>
+             </li>
+             <li>
+               <a href="#"><img class="sidebar-img" src="assets/pictures/my-orders.png">My Orders</a>
+             </li>
+             <li>
+               <a href="#"><img class="sidebar-img" src="assets/pictures/favourite.png">My Favorites</a>
+             </li>
+             <li>
+               <a href="#"><img class="sidebar-img" src="assets/pictures/messages.png">Messages</a>
+             </li>
+             <li>
+               <a href="#"><img class="sidebar-img" src="assets/pictures/contact-us.png">Contact Us</a>
+             </li>
+             <li>
+               <a href="#"><img class="sidebar-img" src="assets/pictures/terms-condition.png">Terms & Condition</a>
+             </li>
+         </ul>
+         <div class="sidebar-down">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Purchassing Policy</a>
+         </div>
+  </section>
+<!-- <section id="cart-card" class="">
+  <div class="container">
+    <div class="card cart-card">
+      <div class="card-body cart-card-body">
+        <div class="upper-part">
+          <p>Cart</p>
+        </div>
+        <div class="body-part">
+          <div class="product">
+            <input type="radio" name="store" value="Store-1">
+            <p class="store-name"> Samsung Official Store</p>
+            <i class="fas fa-angle-right"></i>
+            <div class="product-part">
+              <div class="img-text-part d-flex">
+                <img class="cart-product-img card-img-top" src="assets/pictures/galaxy-s20-1.jpg" alt="BRAND" >
+                <div class="text-part">
+                  <p class="product-name">Samsung Galaxy s20 Ultra Smartphone 6.8" -8GB RAM-512GB</p>
+                  <div class="color-value-part">
+                    <p>Color: Black</p>
+                    <form>
+                      <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                      <input type="number" id="number" value="0" />
+                      <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                    </form>
+                  </div>
+                  <p class="price">BDT 80,0000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <input type="radio" name="store" value="Store-2">
+            <p class="store-name"> Samsung Official Store</p>
+            <i class="fas fa-angle-right"></i>
+            <div class="product-part">
+              <div class="img-text-part d-flex">
+                <img class="cart-product-img card-img-top" src="assets/pictures/galaxy-s20-1.jpg" alt="BRAND" >
+                <div class="text-part">
+                  <p class="product-name">Samsung Galaxy s20 Ultra Smartphone 6.8" -8GB RAM-512GB</p>
+                  <div class="color-value-part">
+                    <p>Color: Black</p>
+                    <form>
+                      <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                      <input type="number" id="number" value="0" />
+                      <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                    </form>
+                  </div>
+                  <p class="price">BDT 80,0000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="down-part">
+          <input type="radio" name="all" value="all">
+          <label for="all">All</label>
+          <button class="text-center btn" type="submit">Check out</button>
+        </div>
+    </div>
+  </div>
+</section> -->
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+
+     $(document).ready(function(){
+       $(".closebtn").on('click',function(){
+         $("#sidebar").addClass('active')
+       })
+        $(".navbar-brand").on('click',function(){
+          $("#sidebar").toggleClass('active')
+          if (!$("#sidebar").hasClass('active')) {
+            $(".list-unstyled").removeClass('show')
+          }
+        });
+     });
+
+     // $(document).ready(function(){
+     //   $(".cart-btn").on('click',function(){
+     //     $("#cart-card").addClass('active')
+     //   })
+     //    $(".cart-btn").on('click',function(){
+     //      $("#cart-card").toggleClass('active')
+     //      if (!$("#cart-card").hasClass('active')) {
+     //        $(".cart-card").removeClass('active')
+     //      }
+     //    });
+     // });
+
+
+
+
+
+
+
+    function increaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+    }
+
+    function decreaseValue() {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value < 1 ? value = 1 : '';
+        value--;
+        document.getElementById('number').value = value;
+     }
+  </script>
+    </body>
+  </html>
