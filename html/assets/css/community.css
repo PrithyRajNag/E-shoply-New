@@ -497,8 +497,8 @@ a[aria-expanded="true"]{
   margin-right: 10px;
 }
 .profile-dropdown a img{
-  margin-left: -1px;
-  margin-right: 6px;
+  margin-left: -2px;
+  margin-right: 7px;
 }
 .btn:focus{
   box-shadow: none;
@@ -729,7 +729,7 @@ a[aria-expanded="true"]{
   }
   .main-menu .navbar{
     -webkit-transform: translate(-35% , -103px);
-    -moz-transform: translate(-35% , -102px);
+    -moz-transform: translate(-35% , -105px);
   }
   .fixed{
     position: fixed;
@@ -898,7 +898,7 @@ a[aria-expanded="true"]{
   }
   .main-menu .navbar{
     -webkit-transform: translate(-18px , -106px);
-    -moz-transform: translate(-18px , -104px);
+    -moz-transform: translate(-18px , -107px);
   }
   .fixed{
     position: fixed;
@@ -1062,7 +1062,7 @@ a[aria-expanded="true"]{
   }
   .main-menu .navbar{
     -webkit-transform: translate(-30%,-104px);
-    -moz-transform: translate(-30%,-102px);
+    -moz-transform: translate(-30%,-103px);
   }
   .fixed{
     position: fixed;

@@ -227,7 +227,7 @@
                        <div>
                          <button class="ncfs-btn btn profile-dropdown-btn" type="button" id="dropdownProfile Button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="profile" src="assets/pictures/sign-in.png" alt="Profile"></button>
                          <div class="dropdown-menu profile-dropdown" aria-labelledby="dropdownProfileButton">
-                           <a href="#"><i class="far fa-user"></i>My Profile</a>
+                           <a href="my-profile.html"><i class="far fa-user"></i>My Profile</a>
                            <a href="#"><img class="logout" src="assets/pictures/logout-icon.png" alt="Logout">Logout</a>
                          </div>
                        </div>
@@ -235,7 +235,7 @@
             </div>
         </div>
   </section>
-  <Section class="main-menu">
+  <section class="main-menu">
     <div class="container">
         <div class="row">
            <div class="d-flex menu col-lg-12 col-xl-12">
@@ -249,15 +249,15 @@
                <ul>
                  <li><a class="active" href="index.html">HOME</a></li>
                  <li><a href="new-products.html">NEW PRODUCTS</a></li>
-                 <li><a href="#">CAMPAIGN</a></li>
+                 <li><a href="campaign.html">CAMPAIGN</a></li>
                  <li><a href="brand.html">BRAND</a></li>
                  <li><a href="shop.html">SHOP</a></li>
-                 <li><a href="#">COMMUNITY</a></li>
+                 <li><a href="community.html">COMMUNITY</a></li>
                </ul>
            </div>
         </div>
     </div>
-  </Section>
+  </section>
   <section id="sidebar" class="active" >
        <div class="sidebar-up">
            <a href="#" class="closebtn float-left "><i class="fas fa-arrow-left"></i></a>
@@ -272,7 +272,7 @@
                <a href="new-products.html"><i class="sidebar-img fab fa-product-hunt"></i>New Products</a>
              </li>
              <li>
-               <a href="#"><i class="sidebar-img fas fa-bullhorn"></i>Campaigns</a>
+               <a href="campaign.html"><i class="sidebar-img fas fa-bullhorn"></i>Campaigns</a>
              </li>
              <li class="responsive-items">
                <a href="brand.html"><i class="sidebar-img far fa-thumbs-up"></i>Brand</a>
@@ -281,7 +281,7 @@
                <a href="shop.html"><i class="sidebar-img fas fa-store"></i>Shop</a>
              </li>
              <li class="responsive-items">
-               <a href="#"><i class="sidebar-img fas fa-users"></i>Community</a>
+               <a href="community.html"><i class="sidebar-img fas fa-users"></i>Community</a>
              </li>
              <li>
                <a href="#"><img class="sidebar-img" src="assets/pictures/cart.png">Cart</a>
@@ -296,16 +296,16 @@
                <a href="#"><img class="sidebar-img" src="assets/pictures/messages.png">Messages</a>
              </li>
              <li>
-               <a href="#"><img class="sidebar-img" src="assets/pictures/contact-us.png">Contact Us</a>
+               <a href="contact-us.html"><img class="sidebar-img" src="assets/pictures/contact-us.png">Contact Us</a>
              </li>
              <li>
-               <a href="#"><img class="sidebar-img" src="assets/pictures/terms-condition.png">Terms & Condition</a>
+               <a href="terms-condition.html"><img class="sidebar-img" src="assets/pictures/terms-condition.png">Terms & Condition</a>
              </li>
          </ul>
          <div class="sidebar-down">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookie Policy</a>
-            <a href="#">Purchassing Policy</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="cookie-policy.html">Cookie Policy</a>
+            <a href="purchasing-policy.html">Purchassing Policy</a>
          </div>
   </section>
 
@@ -319,9 +319,10 @@
                 <p>Your Order</p>
               </div>
               <div class="product">
-                <input type="radio" name="store1" value="Store-1">
+                <!-- <input type="radio" name="store1" value="Store-1"> -->
                 <p class="store-name"> Samsung Official Store</p>
                 <i class="fas fa-angle-right"></i>
+                <a class="float-right" href="#"><i class="far fa-trash-alt"></i></a>
                 <div class="product-part">
                   <div class="img-text-part d-flex">
                     <img class="card-img-top" src="assets/pictures/galaxy-s20-1.jpg" alt="BRAND" >
@@ -335,18 +336,20 @@
                           <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
                         </form>
                       </div>
+                      <p class="price">BDT 80,0000</p>
                     </div>
                     <div>
-                      <p class="price">BDT 80,0000</p>
-                      <button class="delete-btn btn"type="button" name="button">Delete</button>
+
+                      <!-- <button class="delete-btn btn"type="button" name="button">Delete</button> -->
                     </div>
                   </div>
                 </div>
               </div>
               <div class="product">
-                <input type="radio" name="store2" value="Store-1">
+                <!-- <input type="radio" name="store2" value="Store-1"> -->
                 <p class="store-name"> Samsung Official Store</p>
                 <i class="fas fa-angle-right"></i>
+                <a class="float-right" href="#"><i class="far fa-trash-alt"></i></a>
                 <div class="product-part">
                   <div class="img-text-part d-flex">
                     <img class="card-img-top" src="assets/pictures/galaxy-s20-1.jpg" alt="BRAND" >
@@ -361,10 +364,11 @@
                           <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
                         </form>
                       </div>
+                      <p class="price">BDT 80,0000</p>
                     </div>
                     <div>
-                      <p class="price">BDT 80,0000</p>
-                      <button class="delete-btn btn"type="button" name="button">Delete</button>
+
+                      <!-- <button class="delete-btn btn"type="button" name="button">Delete</button> -->
                     </div>
                   </div>
                 </div>
@@ -376,12 +380,34 @@
     </div>
   </section>
 
-  <section class="transaction">
+  <section class="checkout-info">
     <div class="container">
       <div class="row">
         <div class="col-12 col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-10 offset-xl-1 col-xl-10">
           <div class="card c2">
             <div class="card-body c2-body">
+              <div class="upper-part">
+                <p>Checkout Information</p>
+              </div>
+              <div class="body">
+                <label>Phone Number</label>
+                <input class="form-control" type="tel" placeholder="Phone Number" id="phone-number" >
+                <label>Delivery Address</label>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order-summary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 offset-md-1 col-md-10 offset-lg-1 col-lg-10 offset-xl-1 col-xl-10">
+          <div class="card c3">
+            <div class="card-body c3-body">
               <div class="upper-part">
                 <p>Order Summary</p>
               </div>
@@ -401,6 +427,10 @@
                   <p class="total-price">BDT 1,60,0060</p>
                 </div>
                 <button class="btn confirm-btn" type="button" name="button">Confirm Payment</button>
+              </div>
+              <div class="agree-part text-center">
+                <input type="radio" name="agree" value="agree">
+                <p class="agree">I agree to the <a href="terms-condition.html">Terms & Conditions</a> and <a href="purchasing-policy.html">Purchasing Policy</a> of E-Shoply</p>
               </div>
             </div>
           </div>
@@ -424,10 +454,10 @@
             <div class=" text-light mnu col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
                <ul class="list-unstyled">
                   <li class="header">Menu</li>
-                  <li><a class="f-text" href="#">Privacy Policy</a></li>
-                  <li><a class="f-text" href="#">Cookie Policy</a></li>
-                  <li><a class="f-text" href="#">Purchasing Policy</a></li>
-                  <li><a class="f-text" href="#">Terms & Conditions</a></li>
+                  <li><a class="f-text" href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a class="f-text" href="cookie-policy.html">Cookie Policy</a></li>
+                  <li><a class="f-text" href="purchasing-policy.html">Purchasing Policy</a></li>
+                  <li><a class="f-text" href="terms-condition.html">Terms & Conditions</a></li>
                   <li><a class="f-text" href="#">Help & FAQ</a></li>
                </ul>
              </div>
@@ -443,7 +473,7 @@
                   <ul class="list-unstyled ">
                      <li class="header">Marketplace</li>
                      <li><a class="f-text" href="#">Become a Seller</a></li>
-                     <li><a class="f-text" href="#">Terms & Conditions</a></li>
+                     <li><a class="f-text" href="terms-condition.html">Terms & Conditions</a></li>
                   </ul>
                 </div>
                 <div class="text-light download col-12 col-sm-12 col-md-3 offset-lg-1 col-lg-2 offset-lg-1 col-xl-2">

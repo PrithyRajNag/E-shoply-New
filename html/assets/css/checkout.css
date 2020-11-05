@@ -497,35 +497,40 @@ a[aria-expanded="true"]{
   margin-right: 10px;
 }
 .profile-dropdown a img{
-  margin-left: -1px;
-  margin-right: 6px;
+  margin-left: -2px;
+  margin-right: 7px;
 }
 .btn:focus{
   box-shadow: none;
 }
 .order .container,
-.transaction .container{
+.checkout-info .container,
+.order-summary .container{
   padding: 0px;
 }
 .c1,
-.c2{
+.c2,
+.c3{
   padding: 0px;
   border-radius: 15px;
   margin: 15px 0px;
 }
 .c1-body,
-.c2-body{
+.c2-body,
+.c3-body{
   padding: 0px;
   padding-bottom: 30px;
 }
 .c1 .c1-body .upper-part,
-.c2 .c2-body .upper-part{
+.c2 .c2-body .upper-part,
+.c3 .c3-body .upper-part{
   background-color: #BCE1C3;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
 .c1 .c1-body .upper-part p,
-.c2 .c2-body .upper-part p{
+.c2 .c2-body .upper-part p,
+.c3 .c3-body .upper-part p{
   margin-bottom: 0px;
   padding: 15px 30px;
   font-size: 19px;
@@ -539,8 +544,12 @@ a[aria-expanded="true"]{
   width:250px;
   border-bottom: 1px solid #707070;
 }
-input[type="radio"]:checked{
-  outline: none;
+.c1 .c1-body .product a{
+  color:#000;
+  right: 70px;
+}
+.c1 .c1-body .product a i{
+  font-size: 18px;
 }
 .c1 .c1-body .product img{
   width:90px;
@@ -565,14 +574,15 @@ input[type="radio"]:checked{
   font-size: 20px;
   right:70px;
   color: #CC0000;
+  margin-top: -30px;
 }
-.c1 .c1-body .product .delete-btn{
+/* .c1 .c1-body .product .delete-btn{
   position: absolute;
   right:70px;
   margin-top: 70px;
   padding: 0px;
   color: #CC0000;
-}
+} */
 .c1 .c1-body .product .img-text-part{
   padding-bottom: 15px;
   border-bottom: 1px solid #707070;
@@ -634,31 +644,46 @@ input[type="radio"]:checked{
     -webkit-appearance: none;
     margin: 0;
 }
-.c2 .c2-body .body-part{
+.c2 .c2-body .body{
+  padding: 0px 60px;
+}
+.c2 .c2-body .body label{
+  margin-top: 10px;
+  font-size: 18px;
+}
+.c2 .c2-body .body input{
+  height: 50px;
+}
+.c2 .c2-body .body input,
+.c2 .c2-body .body textarea{
+  border: 2px solid #80C41C;
+  border-radius: 10px;
+}
+.c3 .c3-body .body-part{
   width:370px;
 }
-.c2 .c2-body .calculation-part{
+.c3 .c3-body .calculation-part{
   padding-top: 50px;
   border-bottom: 1px solid #000;
 }
-.c2 .c2-body .calculation-part p{
+.c3 .c3-body .calculation-part p{
   display: inline-block;
   font-size: 18px;
 }
-.c2 .c2-body .calculation-part .price{
+.c3 .c3-body .calculation-part .price{
   float: right;
   color: #CC0000;
 }
-.c2 .c2-body .total p{
+.c3 .c3-body .total p{
   display: inline-block;
   font-size: 20px;
   margin-top: 10px;
 }
-.c2 .c2-body .total .total-price{
+.c3 .c3-body .total .total-price{
   float: right;
   color: #CC0000;
 }
-.c2 .c2-body .confirm-btn{
+.c3 .c3-body .confirm-btn{
   width: 100%;
   background-color: #CC0000;
   color: #fff;
@@ -666,6 +691,21 @@ input[type="radio"]:checked{
   height: 50px;
   border-radius: 10px;
   margin-top: 30px;
+}
+.c3 .c3-body .agree-part{
+  margin-top: 20px;
+}
+.c3 .c3-body .agree{
+  display: inline;
+}
+.c3 .c3-body .agree a{
+  color: #CC0000;
+  text-decoration: none;
+}
+.c3 .c3-body input[type="radio"]{
+  outline: none;
+  display: inline;
+  margin-right: 10px;
 }
 .btn:focus{
   box-shadow: none;
@@ -757,11 +797,13 @@ input[type="radio"]:checked{
     margin-top: 10px;
   }
   .c1-body,
-  .c2-body{
+  .c2-body,
+  .c3-body{
     padding-bottom: 28px;
   }
   .c1 .c1-body .upper-part p,
-  .c2 .c2-body .upper-part p{
+  .c2 .c2-body .upper-part p,
+  .c3 .c3-body .upper-part p{
     padding: 15px 18px;
     font-size: 19px;
   }
@@ -806,22 +848,37 @@ input[type="radio"]:checked{
   .c1 .c1-body .product form{
     padding-top: 12px;
   }
-  .c2 .c2-body .body-part{
-    width:350px;
+  .c2 .c2-body .body{
+    padding: 0px 50px;
   }
-  .c2 .c2-body .calculation-part{
-    padding-top: 40px;
-  }
-  .c2 .c2-body .calculation-part p{
+  .c2 .c2-body .body label{
     font-size: 17px;
   }
-  .c2 .c2-body .total p{
+  .c2 .c2-body .body input{
+    height: 48px;
+  }
+  .c3 .c3-body .body-part{
+    width:350px;
+  }
+  .c3 .c3-body .calculation-part{
+    padding-top: 40px;
+  }
+  .c3 .c3-body .calculation-part p{
+    font-size: 17px;
+  }
+  .c3 .c3-body .total p{
     font-size: 19px;
   }
-  .c2 .c2-body .confirm-btn{
+  .c3 .c3-body .confirm-btn{
     font-size: 19px;
     height: 50px;
     margin-top: 30px;
+  }
+  .c3 .c3-body .agree{
+    font-size: 16px;
+  }
+  .c3 .c3-body input[type="radio"]{
+    transform: translateY(1px);
   }
   .footer .header{
     font-size: 18px;
@@ -913,7 +970,7 @@ input[type="radio"]:checked{
   }
   .main-menu .navbar{
     -webkit-transform: translate(-35% , -103px);
-    -moz-transform: translate(-35% , -102px);
+    -moz-transform: translate(-35% , -105px);
   }
   .fixed{
     position: fixed;
@@ -928,11 +985,13 @@ input[type="radio"]:checked{
     z-index: 30;
   }
   .c1-body,
-  .c2-body{
+  .c2-body,
+  .c3-body{
     padding-bottom: 25px;
   }
   .c1 .c1-body .upper-part p,
-  .c2 .c2-body .upper-part p{
+  .c2 .c2-body .upper-part p,
+  .c3 .c3-body .upper-part p{
     padding: 12px 17px;
     font-size: 18px;
   }
@@ -942,6 +1001,9 @@ input[type="radio"]:checked{
   .c1 .c1-body .product .store-name{
     font-size: 18px;
     width:250px;
+  }
+  .c1 .c1-body .product a i{
+    font-size: 17px;
   }
   .c1 .c1-body .product img{
     width:90px;
@@ -958,11 +1020,7 @@ input[type="radio"]:checked{
   .c1 .c1-body .product .price{
     font-size: 17px;
     right:30px;
-  }
-  .c1 .c1-body .product .delete-btn{
-    right:30px;
-    margin-top: 90px;
-    font-size: 15px;
+    margin-top: -25px;
   }
   .c1 .c1-body .product .color{
     font-size: 15px;
@@ -977,22 +1035,38 @@ input[type="radio"]:checked{
   .c1 .c1-body .product form{
     padding-top: 12px;
   }
-  .c2 .c2-body .body-part{
-    width:320px;
+  .c2 .c2-body .body{
+    padding: 0px 40px;
   }
-  .c2 .c2-body .calculation-part{
-    padding-top: 40px;
-  }
-  .c2 .c2-body .calculation-part p{
+  .c2 .c2-body .body label{
     font-size: 16px;
   }
-  .c2 .c2-body .total p{
+  .c2 .c2-body .body input{
+    height: 45px;
+  }
+  .c3 .c3-body .body-part{
+    width:320px;
+  }
+  .c3 .c3-body .calculation-part{
+    padding-top: 40px;
+  }
+  .c3 .c3-body .calculation-part p{
+    font-size: 16px;
+  }
+  .c3 .c3-body .total p{
     font-size: 18px;
   }
-  .c2 .c2-body .confirm-btn{
+  .c3 .c3-body .confirm-btn{
     font-size: 18px;
     height: 50px;
     margin-top: 30px;
+  }
+  .c3 .c3-body .agree{
+    font-size: 15px;
+  }
+  .c3 .c3-body input[type="radio"]{
+    margin-right: 5px;
+    transform: translateY(1px);
   }
   .footer a{
     color: #fff;
@@ -1127,7 +1201,7 @@ input[type="radio"]:checked{
   }
   .main-menu .navbar{
     -webkit-transform: translate(-18px , -106px);
-    -moz-transform: translate(-18px , -104px);
+    -moz-transform: translate(-18px , -107px);
   }
   .fixed{
     position: fixed;
@@ -1142,11 +1216,13 @@ input[type="radio"]:checked{
     z-index: 30;
   }
   .c1-body,
-  .c2-body{
+  .c2-body,
+  .c3-body{
     padding-bottom: 20px;
   }
   .c1 .c1-body .upper-part p,
-  .c2 .c2-body .upper-part p{
+  .c2 .c2-body .upper-part p,
+  .c3 .c3-body .upper-part p{
     padding: 10px 15px;
     font-size: 17px;
   }
@@ -1156,6 +1232,9 @@ input[type="radio"]:checked{
   .c1 .c1-body .product .store-name{
     font-size: 18px;
     width:230px;
+  }
+  .c1 .c1-body .product a i{
+    font-size: 16px;
   }
   .c1 .c1-body .product img{
     width:70px;
@@ -1172,11 +1251,7 @@ input[type="radio"]:checked{
   .c1 .c1-body .product .price{
     font-size: 16px;
     right:18px;
-  }
-  .c1 .c1-body .product .delete-btn{
-    right:18px;
-    margin-top: 85px;
-    font-size: 14px;
+    margin-top: -25px;
   }
   .c1 .c1-body .product .color{
     font-size: 15px;
@@ -1191,22 +1266,38 @@ input[type="radio"]:checked{
   .c1 .c1-body .product form{
     padding-top: 12px;
   }
-  .c2 .c2-body .body-part{
-    width:280px;
+  .c2 .c2-body .body{
+    padding: 0px 30px;
   }
-  .c2 .c2-body .calculation-part{
-    padding-top: 35px;
-  }
-  .c2 .c2-body .calculation-part p{
+  .c2 .c2-body .body label{
     font-size: 16px;
   }
-  .c2 .c2-body .total p{
+  .c2 .c2-body .body input{
+    height: 43px;
+  }
+  .c3 .c3-body .body-part{
+    width:280px;
+  }
+  .c3 .c3-body .calculation-part{
+    padding-top: 35px;
+  }
+  .c3 .c3-body .calculation-part p{
+    font-size: 16px;
+  }
+  .c3 .c3-body .total p{
     font-size: 17px;
   }
-  .c2 .c2-body .confirm-btn{
+  .c3 .c3-body .confirm-btn{
     font-size: 17px;
     height: 50px;
     margin-top: 30px;
+  }
+  .c3 .c3-body .agree{
+    font-size: 15px;
+  }
+  .c3 .c3-body input[type="radio"]{
+    margin-right: 5px;
+    transform: translateY(1px);
   }
   .footer{
     padding-left:5px;
@@ -1336,7 +1427,7 @@ input[type="radio"]:checked{
   }
   .main-menu .navbar{
     -webkit-transform: translate(-30%,-104px);
-    -moz-transform: translate(-30%,-102px);
+    -moz-transform: translate(-30%,-103px);
   }
   .fixed{
     position: fixed;
@@ -1351,11 +1442,13 @@ input[type="radio"]:checked{
     z-index: 30;
   }
   .c1-body,
-  .c2-body{
+  .c2-body,
+  .c3-body{
     padding-bottom: 20px;
   }
   .c1 .c1-body .upper-part p,
-  .c2 .c2-body .upper-part p{
+  .c2 .c2-body .upper-part p,
+  .c3 .c3-body .upper-part p{
     padding: 10px 15px;
     font-size: 16px;
   }
@@ -1365,6 +1458,9 @@ input[type="radio"]:checked{
   .c1 .c1-body .product .store-name{
     font-size: 17px;
     width:200px;
+  }
+  .c1 .c1-body .product a i{
+    font-size: 15px;
   }
   .c1 .c1-body .product img{
     width:50px;
@@ -1381,10 +1477,7 @@ input[type="radio"]:checked{
   .c1 .c1-body .product .price{
     font-size: 15px;
     right:15px;
-  }
-  .c1 .c1-body .product .delete-btn{
-    right:15px;
-    font-size: 13px;
+    margin-top: -25px;
   }
   .c1 .c1-body .product .color{
     font-size: 14px;
@@ -1399,22 +1492,41 @@ input[type="radio"]:checked{
   .c1 .c1-body .product form{
     padding-top: 10px;
   }
-  .c2 .c2-body .body-part{
-    width:250px;
+  .c2 .c2-body .body{
+    padding: 0px 20px;
   }
-  .c2 .c2-body .calculation-part{
-    padding-top: 35px;
-  }
-  .c2 .c2-body .calculation-part p{
+  .c2 .c2-body .body label{
     font-size: 15px;
   }
-  .c2 .c2-body .total p{
+  .c2 .c2-body .body input{
+    height: 40px;
+  }
+  .c3 .c3-body .body-part{
+    width:250px;
+  }
+  .c3 .c3-body .calculation-part{
+    padding-top: 35px;
+  }
+  .c3 .c3-body .calculation-part p{
+    font-size: 15px;
+  }
+  .c3 .c3-body .total p{
     font-size: 16px;
   }
-  .c2 .c2-body .confirm-btn{
+  .c3 .c3-body .confirm-btn{
     font-size: 16px;
     height: 50px;
     margin-top: 30px;
+  }
+  .c3 .c3-body .agree-part{
+    margin: 15px 10px;
+  }
+  .c3 .c3-body .agree{
+    font-size: 14px;
+  }
+  .c3 .c3-body input[type="radio"]{
+    margin-right: 5px;
+    transform: translateY(1px);
   }
   .footer{
     padding-left:5px;
@@ -1458,7 +1570,8 @@ input[type="radio"]:checked{
     width:25px;
   }
   .c1 .c1-body .upper-part p,
-  .c2 .c2-body .upper-part p{
+  .c2 .c2-body .upper-part p,
+  .c3 .c3-body .upper-part p{
     padding: 10px;
   }
   .c1 .c1-body .product{
@@ -1467,7 +1580,10 @@ input[type="radio"]:checked{
   .c1 .c1-body .product .price{
     right:10px;
   }
-  .c1 .c1-body .product .delete-btn{
-    right:10px;
+  .c3 .c3-body .body-part{
+    width:230px;
+  }
+  .c3 .c3-body .agree-part{
+    margin: 10px 10px;
   }
 }

@@ -497,8 +497,8 @@ a[aria-expanded="true"]{
   margin-right: 10px;
 }
 .profile-dropdown a img{
-  margin-left: -1px;
-  margin-right: 6px;
+  margin-left: -2px;
+  margin-right: 7px;
 }
 .btn:focus{
   box-shadow: none;
@@ -628,7 +628,6 @@ a[aria-expanded="true"]{
     height: 2px;
     background-color: #ccc;
     z-order: 0;
-
 }
 
 .stepwizard-step {
